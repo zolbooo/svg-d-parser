@@ -2,7 +2,7 @@ export default [
   {
     input: "src/index.ts",
     output: {
-      file: "lib/cjs/index.js",
+      dir: "lib/cjs",
       format: "cjs",
       sourcemap: true,
     },
@@ -10,7 +10,7 @@ export default [
   {
     input: "src/index.ts",
     output: {
-      file: "lib/esm/index.js",
+      dir: "lib/esm",
       format: "esm",
       sourcemap: true,
     },
