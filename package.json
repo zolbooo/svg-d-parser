@@ -49,5 +49,8 @@
     "rollup": "^3.23.0",
     "ts-jest": "^29.1.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "ts-invariant": "^0.10.3"
   }
 }
