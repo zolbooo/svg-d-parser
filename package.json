@@ -6,7 +6,7 @@
   "main": "lib/esm/index.js",
   "scripts": {
     "test": "jest",
-    "build": "npx rollup --config rollup.config.cjs.js && npx rollup --config rollup.config.esm.js"
+    "build": "npx rollup --config rollup.config.cjs.js && npx rollup --config rollup.config.esm.js && ./scripts/fixup.sh"
   },
   "repository": {
     "type": "git",
