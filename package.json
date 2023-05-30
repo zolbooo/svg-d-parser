@@ -24,7 +24,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint src",
-    "build": "npx tsc && npx rollup --config rollup.config.cjs.js && npx rollup --config rollup.config.esm.js && ./scripts/fixup.sh"
+    "build": "npx tsc && npx rollup --config && ./scripts/fixup.sh"
   },
   "repository": {
     "type": "git",
