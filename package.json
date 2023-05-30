@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "name": "svg-d-parser",
+  "version": "1.0.0",
+  "description": "A parser for d attribute of SVG paths",
+  "main": "lib/esm/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx rollup --config rollup.config.cjs.js && npx rollup --config rollup.config.esm.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zolbooo/svg-d-parser.git"
+  },
+  "keywords": [
+    "svg",
+    "path",
+    "d",
+    "bezier-curve",
+    "graphics",
+    "vector-graphics"
+  ],
+  "author": "Zolboobayar Gantumur <zolboobayar@metainc.mn>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zolbooo/svg-d-parser/issues"
+  },
+  "homepage": "https://github.com/zolbooo/svg-d-parser#readme",
+  "devDependencies": {
+    "rollup": "^3.23.0",
+    "typescript": "^5.0.4"
+  }
+}
