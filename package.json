@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "description": "A parser for d attribute of SVG paths",
   "main": "./lib/cjs/index.js",
-  "types": "./lib/index.d.ts",
+  "types": "./lib/cjs/index.d.ts",
   "exports": {
     ".": {
       "import": {
