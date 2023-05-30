@@ -3,7 +3,24 @@
   "name": "svg-d-parser",
   "version": "1.0.0",
   "description": "A parser for d attribute of SVG paths",
-  "main": "lib/esm/index.js",
+  "main": "./lib/cjs/index.js",
+  "types": "./lib/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/index.d.ts",
+        "default": "./lib/esm/index.js"
+      },
+      "require": {
+        "types": "./lib/cjs/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "jest",
     "build": "npx rollup --config rollup.config.cjs.js && npx rollup --config rollup.config.esm.js && ./scripts/fixup.sh"
