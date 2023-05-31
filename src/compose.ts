@@ -17,7 +17,7 @@ export function composePath(commands: SvgCommand[]): string {
         result += `Q${command.controlX} ${command.controlY} ${command.targetX} ${command.targetY}`;
         break;
       case "cubicBezier":
-        result += `Q${command.control1X} ${command.control1Y} ${command.control2X} ${command.control2Y} ${command.targetX} ${command.targetY}`;
+        result += `C${command.control1X} ${command.control1Y} ${command.control2X} ${command.control2Y} ${command.targetX} ${command.targetY}`;
         break;
     }
   }
@@ -41,7 +41,7 @@ export function composePathWorklet(commands: SvgCommand[]): string {
         result += `Q${command.controlX} ${command.controlY} ${command.targetX} ${command.targetY}`;
         break;
       case "cubicBezier":
-        result += `Q${command.control1X} ${command.control1Y} ${command.control2X} ${command.control2Y} ${command.targetX} ${command.targetY}`;
+        result += `C${command.control1X} ${command.control1Y} ${command.control2X} ${command.control2Y} ${command.targetX} ${command.targetY}`;
         break;
     }
   }
