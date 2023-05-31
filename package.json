@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "svg-d-parser",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A parser for d attribute of SVG paths",
   "main": "./lib/cjs/index.js",
   "types": "./lib/cjs/index.d.ts",
