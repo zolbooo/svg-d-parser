@@ -12,6 +12,7 @@ import {
 } from "./commands";
 
 export * from "./commands";
+export * from "./compose";
 
 export function parsePath(path: string): SvgCommand[] {
   const result: SvgCommand[] = [];
